@@ -39,6 +39,14 @@ false
 
 Full documentation can be found at [https://hexdocs.pm/eip_55](https://hexdocs.pm/eip_55).
 
+## Performance
+
+This library uses [`:ex_sha3`](https://hex.pm/packages/ex_sha3) which is a pure Elixir implementation making it
+[significantly slower](https://github.com/dominicletz/exsha3#this-is-slow) than an NIF-based library like [`:sha3`](https://hex.pm/packages/sha3).
+
+If you have a demand for high-performance EIP-55 encoding/validation, let me know.
+Maybe we can then add a NIF-based version.
+
 ## License
 
 EIP-55 is released under the MIT License. See [LICENSE](./LICENSE) for further details.
