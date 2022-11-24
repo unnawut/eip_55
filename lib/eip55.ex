@@ -19,7 +19,8 @@ defmodule EIP55 do
       {:error, :unrecognized_address_format}
 
   """
-  @spec encode(String.t() | binary()) :: {:ok, String.t()} | {:error, :unrecognized_address_format}
+  @spec encode(String.t() | binary()) ::
+          {:ok, String.t()} | {:error, :unrecognized_address_format}
   def encode("0x" <> address) when byte_size(address) == 40 do
     address = String.downcase(address)
 
