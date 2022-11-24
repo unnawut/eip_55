@@ -83,7 +83,7 @@ jobs:
 
       - name: Run tests
         id: tests
-        run: mix coveralls
+        run: mix test
 
       # - name: Run sobelow
       #   id: sobelow
