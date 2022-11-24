@@ -39,7 +39,7 @@ defmodule EIP55.MixProject do
     [
       {:ex_doc, ">= 0.19.0", only: :dev},
       {:excoveralls, "~> 0.8", only: :test},
-      {:ex_sha3, "~> 0.1"}
+      {:ex_keccak, "~> 0.6.0"}
     ]
   end
 end

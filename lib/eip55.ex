@@ -25,7 +25,7 @@ defmodule EIP55 do
 
     hash =
       address
-      |> ExSha3.keccak_256()
+      |> ExKeccak.hash_256()
       |> Base.encode16(case: :lower)
       |> String.graphemes()
 
