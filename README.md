@@ -41,11 +41,7 @@ Full documentation can be found at [https://hexdocs.pm/eip_55](https://hexdocs.p
 
 ## Performance
 
-This library uses [`:ex_sha3`](https://hex.pm/packages/ex_sha3) which is a pure Elixir implementation making it
-[significantly slower](https://github.com/dominicletz/exsha3#this-is-slow) than an NIF-based library like [`:sha3`](https://hex.pm/packages/sha3).
-
-If you have a demand for high-performance EIP-55 encoding/validation, let me know.
-Maybe we can then add a NIF-based version.
+This is a fork of `eip_55` and uses the `:ex_keccak` dependency that uses a Rustler NIF for significant performance gains.
 
 ## License
 
