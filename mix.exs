@@ -38,8 +38,8 @@ defmodule EIP55.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.19.0", only: :dev},
-      {:excoveralls, "~> 0.8", only: :test},
-      {:ex_keccak, "~> 0.6.0"}
+      {:excoveralls, "~> 0.16", only: :test},
+      {:ex_keccak, "~> 0.7.1"}
     ]
   end
 end
